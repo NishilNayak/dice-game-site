@@ -1,3 +1,4 @@
+if (window.performance.navigation.type === 1) {
 var randomNum1 = Math.floor(Math.random() * 6)+1;
 document.querySelector(".img1").setAttribute("src", "images/dice" + randomNum1 + ".png");
 var randomnNum2 = Math.floor(Math.random() * 6)+1;
@@ -14,3 +15,5 @@ if(randomNum1<randomnNum2){
 if(randomNum1==randomnNum2){
     document.querySelector("h1").textContent="Draw";
 };
+   
+}
